@@ -1,0 +1,24 @@
+.header {
+    padding-bottom: 6rem; //temporary
+    &__logo {
+        width: 20vh;
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+
+            @media screen and (max-width:376px) {
+                background-image: url('../../images/bg-header-mobile.png');  
+            }
+
+            @media screen and (min-width:377px) {
+                background-image: url('../../images/bg-header-desktop.png');
+                background-repeat: repeat-x;  
+            }
+
+            
+            background-repeat: no-repeat;
+        }
+    }
+}

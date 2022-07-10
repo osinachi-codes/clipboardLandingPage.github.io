@@ -1,0 +1,83 @@
+.footer {
+    margin-top: 10rem;
+    background-color: $grayishBlueLight;
+    padding: 5rem 0;
+
+    @media screen and (min-width:1200px){
+        display: flex;
+        justify-content: space-between;
+       // align-items: center;
+
+        padding: 5rem;
+    }
+    &__logo {
+        &-box {
+            margin-bottom: 3rem;
+            text-align: center;
+       }
+
+        width: 10vh;
+        
+    }
+
+    &__link {
+        &-box {
+            //margin-top: 3rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            
+        }
+        
+        color: $darkGrayishBlue;
+        transition: all .3s;
+           
+        &:hover,&:active {
+            color: $StrongCyan;
+            transform: rotate(10deg);
+        }
+
+        
+
+        
+        margin-bottom: 3rem;
+    }
+
+    &__social {
+        &-box {
+            margin-top: 3rem;
+            text-align: center;
+
+            @media screen and (min-width:1200px){
+                margin-left: 20rem;
+            }
+
+            :not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+
+        
+
+        &-icon {
+            width: 5vh;
+            transition: all .3s;
+            &:hover {
+                transform: translateY(-10px);
+            }
+
+            &:active {
+                transform: translateY(0);
+            }
+
+           
+        }
+
+        &-link {
+            
+        }
+
+        
+    }
+}

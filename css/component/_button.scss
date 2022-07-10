@@ -1,0 +1,38 @@
+.btn {
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 650px) {
+            flex-direction: row;  
+        }
+    }
+
+    display: inline-block;
+    color: $white;
+    padding: 1.5rem 6rem;
+    border-radius: 3rem;
+    transition: all .3s;
+    &:hover,&:active {
+        opacity: 0.5;
+    }
+
+    &--green {
+        background: $StrongCyan;
+        box-shadow: 0 1rem .8rem rgba($StrongCyan,.3);
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+
+        @media screen and (min-width: 650px) {
+            margin-right: 3rem;
+        }
+        
+    }
+
+    &--blue {
+        background: $lightBlue;
+        box-shadow: 0 1rem .8rem rgba($lightBlue,.3);
+    }
+}

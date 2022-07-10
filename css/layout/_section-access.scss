@@ -1,0 +1,17 @@
+.access {
+    
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 70rem;  
+    }
+
+    
+    &__illustration {
+        &-box {
+            text-align: center;
+        }
+
+        width: 80%;
+        max-width: 50rem;
+    }
+}
